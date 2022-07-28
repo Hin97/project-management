@@ -32,7 +32,7 @@ public class HomeController {
 	@GetMapping("/")
 	public String displayHome(Model model) throws JsonProcessingException {
 
-		model.addAttribute("versionNumber", ver);
+		model.addAttribute("versionNumber",ver);
 
 		Map<String, Object> map = new HashMap<>();
 
