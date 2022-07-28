@@ -16,8 +16,12 @@ import com.jrp.pma.entities.Employee;
 @RequestMapping("/employees")
 public class EmployeeController {
 
-	@Autowired
 	EmployeeRepository empRepo;
+
+	@Autowired
+	public void setEmpRepo(EmployeeRepository empRepo) {
+		this.empRepo = empRepo;
+	}
 
 	@GetMapping("")
 	public String displayProject(Model model) {
